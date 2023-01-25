@@ -40,11 +40,29 @@ npx sequelize-cli db:migrate:status
 # eight command
 npx sequelize db:create
 *********To create a database use this command.
+npx sequelize db:drop
+*********To drop a database use this command.
 
 # ninth command
 npx sequelize-cli seed:generate --name add-user
 *********To generate seeder file. 
 *********To add dummy user, so that we can login.
+
+# tenth command
+npx sequelize-cli db:seed:all
+*********To insert data inside table through migration. 
+
+# eleventh command
+npx sequelize-cli db:seed --seed 20230124080626-add-user.js
+*********We can insert data in table individually.
+
+# twelve command
+npx sequelize-cli db:seed:undo
+*********In case of undo single or the last updated one.
+
+# thirteen command
+npx sequelize-cli db:seed:undo:all
+*********In case of undo all data.
 
 # all commands for express_sequelize_migration
 Sequelize CLI [Node: 16.14.2, CLI: 6.5.2, ORM: 6.28.0]

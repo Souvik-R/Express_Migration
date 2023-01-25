@@ -4,7 +4,12 @@
     "password": null,
     "database": "express_migration",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "migrationsTableName": "migration_table",
+    "migrations": ["migration/*.js"],
+    "cli": {
+      "migrationsDir":"migration"
+    }
   },
   "test": {
     "username": "root",
