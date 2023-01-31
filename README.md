@@ -92,3 +92,10 @@ Commands:
   sequelize model:create                      Generates a model and its migration
   sequelize seed:generate                     Generates a new seed file
   sequelize seed:create                       Generates a new seed file
+
+# fouteen command 
+npx sequelize-cli migration:create --name employee_modify
+*********To modify any table or update or add any column..
+npx sequelize-cli db:migrate
+*********Then run this command
+

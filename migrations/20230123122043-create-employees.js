@@ -9,6 +9,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      managerId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Managers',
+          key: 'id'
+        }
+      },
       name: {
         type: Sequelize.STRING
       },
